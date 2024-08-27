@@ -87,9 +87,9 @@ class EndpointFilter(logging.Filter):
 logging.getLogger("uvicorn.access").addFilter(EndpointFilter())
 
 
-WEBUI_NAME = os.environ.get("WEBUI_NAME", "Open WebUI")
-if WEBUI_NAME != "Open WebUI":
-    WEBUI_NAME += " (Open WebUI)"
+WEBUI_NAME = os.environ.get("WEBUI_NAME", "Parsed")
+if WEBUI_NAME != "Parsed":
+    WEBUI_NAME += " (Parsed)"
 
 WEBUI_URL = os.environ.get("Parsed", "Parsed")
 
