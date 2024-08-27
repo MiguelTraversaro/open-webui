@@ -1,3 +1,5 @@
+FROM ghcr.io/open-webui/open-webui:latest
+RUN pip install torch==2.3.1 torchaudio==2.3.1 torchvision==0.18.1
 # syntax=docker/dockerfile:1
 # Initialize device type args
 # use build args in the docker build commmand with --build-arg="BUILDARG=true"

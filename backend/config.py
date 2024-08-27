@@ -91,9 +91,9 @@ WEBUI_NAME = os.environ.get("WEBUI_NAME", "Parsed")
 if WEBUI_NAME != "Parsed":
     WEBUI_NAME += " (Parsed)"
 
-WEBUI_URL = os.environ.get("Parsed", "Parsed")
+WEBUI_URL = os.environ.get("WEBUI_URL", "Parsed")
 
-WEBUI_FAVICON_URL = "https://openwebui.com/favicon.png"
+WEBUI_FAVICON_URL = "https://parsedco.com/wp-content/uploads/2023/11/Group-5.png"
 
 
 ####################################
@@ -515,7 +515,7 @@ if CUSTOM_NAME:
         if r.ok:
             if "logo" in data:
                 WEBUI_FAVICON_URL = url = (
-                    f"https://api.openwebui.com{data['logo']}"
+                    "https://parsedco.com/wp-content/uploads/2023/11/Group-5.png"
                     if data["logo"][0] == "/"
                     else data["logo"]
                 )
@@ -528,7 +528,7 @@ if CUSTOM_NAME:
 
             if "splash" in data:
                 url = (
-                    f"https://api.openwebui.com{data['splash']}"
+                    f"https://parsedco.com/wp-content/uploads/2023/11/Group-5.png"
                     if data["splash"][0] == "/"
                     else data["splash"]
                 )
