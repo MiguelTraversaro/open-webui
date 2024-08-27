@@ -95,10 +95,10 @@
 		}
 
 		if (themeToApply === 'dark' && !_theme.includes('oled')) {
-			document.documentElement.style.setProperty('--color-gray-800', '#333');
-			document.documentElement.style.setProperty('--color-gray-850', '#262626');
-			document.documentElement.style.setProperty('--color-gray-900', '#171717');
-			document.documentElement.style.setProperty('--color-gray-950', '#0d0d0d');
+			document.documentElement.style.setProperty('--color-gray-800', '#7acdff');
+			document.documentElement.style.setProperty('--color-gray-850', '#2c4e63');
+			document.documentElement.style.setProperty('--color-gray-900', '#213a49');
+			document.documentElement.style.setProperty('--color-gray-950', '#15242e');
 		}
 
 		themes
@@ -120,10 +120,10 @@
 		theme.set(_theme);
 		localStorage.setItem('theme', _theme);
 		if (_theme.includes('oled')) {
-			document.documentElement.style.setProperty('--color-gray-800', '#101010');
-			document.documentElement.style.setProperty('--color-gray-850', '#050505');
-			document.documentElement.style.setProperty('--color-gray-900', '#000000');
-			document.documentElement.style.setProperty('--color-gray-950', '#000000');
+			document.documentElement.style.setProperty('--color-gray-800', '#7acdff');
+			document.documentElement.style.setProperty('--color-gray-850', '#7acdff');
+			document.documentElement.style.setProperty('--color-gray-900', '#7acdff');
+			document.documentElement.style.setProperty('--color-gray-950', '#7acdff');
 			document.documentElement.classList.add('dark');
 		}
 		applyTheme(_theme);

@@ -137,8 +137,9 @@
 			<a
 				class=" text-gray-500 dark:text-gray-300 font-medium"
 				href="https://github.com/tjbck"
-				target="_blank">Timothy J. Baek</a
+				target="_blank">Maik</a
 			>
+			<p>asd</p>
 		</div>
 	</div>
 </div>
